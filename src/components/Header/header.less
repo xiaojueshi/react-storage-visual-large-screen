@@ -1,0 +1,71 @@
+.HeaderCompoent {
+	display: grid;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	background-image: url(../../assets/images/header_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	grid-template-columns: 1fr 50% 1fr;
+
+	.header-left {
+		display: grid;
+		text-align: center;
+		color: #45a2ff;
+		transform: translateY(-3px);
+
+		grid-template-columns: 1fr 1fr 1.3fr;
+
+		.header-left_city {
+			font-weight: 500;
+			font-size: 22px;
+			color: #fff;
+		}
+
+		.header-left_weather {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 36px;
+				height: 36px;
+			}
+
+			span {
+				margin-left: 10px;
+				font-size: 18px;
+			}
+		}
+
+		.header-left_temperature {
+			font-size: 22px;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		font-weight: 700;
+		font-size: 44px;
+	}
+
+	.header-right {
+		display: grid;
+		text-align: center;
+		font-size: 22px;
+		color: #45a2ff;
+		transform: translateY(-3px);
+
+		grid-template-columns: 1.3fr .7fr 1.2fr;
+
+		.header-right_time {
+			color: #fff;
+
+			span {
+				display: inline-block;
+				width: 13px;
+			}
+		}
+	}
+}
