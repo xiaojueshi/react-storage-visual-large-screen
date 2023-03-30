@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './pages/index/index'
+import App from './router'
 import './global.css'
 import remInit from "./utils/rem"
 
