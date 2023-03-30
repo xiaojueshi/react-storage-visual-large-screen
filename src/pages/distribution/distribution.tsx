@@ -1,4 +1,4 @@
-import "./distribution.css"
+import "./distribution.less"
 
 function DistributionPage() {
 

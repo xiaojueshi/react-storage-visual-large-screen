@@ -1,4 +1,4 @@
-import "./pick_up.css"
+import "./pick_up.less"
 
 function DistributionPage() {
 
