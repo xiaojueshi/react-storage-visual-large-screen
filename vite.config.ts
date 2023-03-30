@@ -18,6 +18,11 @@ export default defineConfig({
           minPixelValue: 0,
         })
       ]
-    }
+    },
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
   }
 })

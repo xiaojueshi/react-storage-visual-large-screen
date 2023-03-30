@@ -1,9 +1,9 @@
-import "./header.css"
+import "./header.less"
 
 function HeaderCompoent() {
 
   return (
-    <div className="IndexPage">
+    <div className="HeaderCompoent">
       <h1>Header</h1>
     </div>
   )
