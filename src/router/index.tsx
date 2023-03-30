@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Hearder from "../components/Header/Header"
+import Hearder from "../components/Header/header"
 import DistributionPage from "../pages/distribution/distribution";
 import PickUp from "../pages/pick_up/pick_up"
 
