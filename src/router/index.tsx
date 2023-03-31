@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Hearder from "../components/Header/header"
 import DistributionPage from "../pages/distribution/distribution";
 import PickUp from "../pages/pick_up/pick_up"
@@ -8,8 +8,8 @@ const AppRouter = () => {
     <BrowserRouter>
       <Hearder />
       <Routes>
-        <Route path="/" element={<DistributionPage />} />
-        <Route path="/pick_up" element={<PickUp />} />
+        <Route path="/" element={<PickUp />} />
+        <Route path="/pick_up" element={<DistributionPage />} />
       </Routes>
     </BrowserRouter>
   );
