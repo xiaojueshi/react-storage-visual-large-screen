@@ -1,0 +1,57 @@
+.pick-up_IndexPage{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  height:calc(100vh - 80px);
+  background: url(../../assets/images/pick_up/背景图.png);
+  background-size: 100% 100%;
+  &_left{
+    width:460px;
+  }
+  &_center{
+    width:940px;
+    display:flex;
+    flex-direction: column;
+    &_top{
+      flex:1;
+      background: url(../../assets/images/pick_up/centerComponentsImage/背景图层.png) no-repeat;
+      background-size:100% 100%;
+      &_top{
+        height:60%;
+        display:flex;
+        &_left{
+          flex:1;
+        }
+        &_center{
+          flex:1;
+
+        }
+        &_right{
+          flex:1;
+
+        }
+      }
+      &_bottom{
+        height:40%;
+      }
+    }
+    &_bottom{
+      flex:1;
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 30px;
+      margin-top:30px;
+    }
+  }
+  &_right{
+    width:460px;
+    display:flex;
+    flex-direction: column;
+    &_top{
+      flex:1;
+    }
+    &_bottom{
+      flex:1;
+    }
+  }
+}
