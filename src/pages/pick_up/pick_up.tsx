@@ -6,7 +6,7 @@ function DistributionPage() {
   const listTitle = {
     firstTitle: '客户信息',
     secondTitle: '预拣数量',
-    thirdTitle:'拣货员'
+    thirdTitle: '拣货员'
   }
   // 标题名称
   const leftBoxTitle = '待拣货订单'
@@ -34,24 +34,39 @@ function DistributionPage() {
   ];
   return (
     <div className="pick-up_IndexPage">
-      {/* 左边 */}
       <div className="pick-up_IndexPage_left">
         <PickUpScrollList data={boxes} listTitle={listTitle} title={leftBoxTitle} />
       </div>
-      {/* 中间 */}
       <div className="pick-up_IndexPage_center">
         <div className="pick-up_IndexPage_center_top">
           <div className="pick-up_IndexPage_center_top_top">
             <div className="pick-up_IndexPage_center_top_top_left">
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
+              <div>
+                <div className="pick-up_IndexPage_center_top_top_left_top"></div>
+                <div className="pick-up_IndexPage_center_top_top_left_bottom">
+                  <div className="pick-up_IndexPage_center_top_top_left_bottom_Left"></div>
+                  <div className="pick-up_IndexPage_center_top_top_left_bottom_Right"></div>
+                </div>
+              </div>
             </div>
             <div className="pick-up_IndexPage_center_top_top_center"></div>
-            <div className="pick-up_IndexPage_center_top_top_right"></div>
+            <div className="pick-up_IndexPage_center_top_top_right">
+              <div>
+                <div className="pick-up_IndexPage_center_top_top_right_top"></div>
+                <div className="pick-up_IndexPage_center_top_top_right_bottom">
+                  <div className="pick-up_IndexPage_center_top_top_right_bottom_Left"></div>
+                  <div className="pick-up_IndexPage_center_top_top_right_bottom_Right"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="pick-up_IndexPage_center_top_bottom">
-            
+            <div className="text">
+              <p>今日已拣货商品金额</p>
+            </div>
+            <div className="numIcon">
+
+            </div>
           </div>
         </div>
         <div className="pick-up_IndexPage_center_bottom">
@@ -63,13 +78,12 @@ function DistributionPage() {
           </div>
         </div>
       </div>
-      {/* 右边 */}
       <div className="pick-up_IndexPage_right">
         <div className="pick-up_IndexPage_right_top">
-        <PickUpScrollList data={boxes} listTitle={listTitle} title={rightTopBoxTitle} />
+          <PickUpScrollList data={boxes} listTitle={listTitle} title={rightTopBoxTitle} />
         </div>
         <div className="pick-up_IndexPage_right_bottom">
-        <PickUpScrollList data={boxes} listTitle={listTitle} title={rightBottomBoxTitle} />
+          <PickUpScrollList data={boxes} listTitle={listTitle} title={rightBottomBoxTitle} />
         </div>
       </div>
     </div>
